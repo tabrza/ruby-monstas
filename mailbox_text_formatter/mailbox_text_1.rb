@@ -121,4 +121,4 @@ emails = [
 mailbox = Mailbox.new("Ruby Study Group", emails)
 formatter = MailboxTextFormatter.new(mailbox)
 
-puts formatter.format
+File.write("emails.html", formatter.format)
